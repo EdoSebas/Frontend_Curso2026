@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Parcial Practico</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="parcial-practico.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-house"></i> TechStore
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio"><i class="bi bi-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carrito"><i class="bi bi-cart"></i> Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i> Usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="fw-bold">Tecnologia para estudiar, trabajar y jugar</h1>
+                    <p class="lead">Encuentra equipos y accesorios con compra rapida desde un carrito basico.</p>
+                    <a href="#productos" class="btn btn-primary btn-lg">
+                        <i class="bi bi-cart"></i> Ver productos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="productos">
+            <h2 class="mb-4 text-center">Productos destacados</h2>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-producto">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Laptop Gamer">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Laptop Gamer</h5>
+                            <p class="card-text">Equipo potente para videojuegos, estudio y edicion multimedia.</p>
+                            <p class="precio">$3.500.000</p>
+                            <button class="btn btn-primary mt-auto" onclick="agregarProducto(1)">
+                                <i class="bi bi-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-producto">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Monitor Full HD">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Monitor Full HD</h5>
+                            <p class="card-text">Pantalla de 24 pulgadas con buena calidad para trabajo diario.</p>
+                            <p class="precio">$750.000</p>
+                            <button class="btn btn-primary mt-auto" onclick="agregarProducto(2)">
+                                <i class="bi bi-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-producto">
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Teclado Mecanico">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Teclado Mecanico</h5>
+                            <p class="card-text">Teclado RGB comodo y resistente para escribir o jugar.</p>
+                            <p class="precio">$280.000</p>
+                            <button class="btn btn-primary mt-auto" onclick="agregarProducto(3)">
+                                <i class="bi bi-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-producto">
+                        <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Mouse Inalambrico">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mouse Inalambrico</h5>
+                            <p class="card-text">Mouse ergonomico con conexion estable y bateria recargable.</p>
+                            <p class="precio">$120.000</p>
+                            <button class="btn btn-primary mt-auto" onclick="agregarProducto(4)">
+                                <i class="bi bi-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-producto">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Audifonos Bluetooth">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Audifonos Bluetooth</h5>
+                            <p class="card-text">Sonido claro, microfono integrado y diseno ligero para uso diario.</p>
+                            <p class="precio">$210.000</p>
+                            <button class="btn btn-primary mt-auto" onclick="agregarProducto(5)">
+                                <i class="bi bi-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-producto">
+                        <img src="https://images.unsplash.com/photo-1551817958-d9d86fb29431?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Tablet 10 pulgadas">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Tablet 10 pulgadas</h5>
+                            <p class="card-text">Ideal para clases virtuales, lectura, videos y navegacion web.</p>
+                            <p class="precio">$980.000</p>
+                            <button class="btn btn-primary mt-auto" onclick="agregarProducto(6)">
+                                <i class="bi bi-cart"></i> Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrito" class="my-5">
+            <h2 class="mb-4 text-center"><i class="bi bi-cart"></i> Carrito de compras</h2>
+
+            <div class="carrito p-3 p-md-4">
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th>Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listaCarrito">
+                            <tr>
+                                <td colspan="5" class="text-center text-muted">El carrito esta vacio.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row g-3 align-items-center">
+                    <div class="col-12 col-md-6">
+                        <button class="btn btn-danger" onclick="vaciarCarrito()">
+                            <i class="bi bi-trash"></i> Vaciar carrito
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-6 text-md-end">
+                        <h4>Total: <span id="totalCarrito">$0</span></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4 text-center">Contacto</h2>
+            <form class="row g-3">
+                <div class="col-12 col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" id="correo" class="form-control" placeholder="correo@ejemplo.com">
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" class="form-control" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-person"></i> Enviar
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-1">TechStore - Parcial Practico Frontend</p>
+            <small>Juan Sebastian Sandoval</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="parcial-practico.js"></script>
+</body>
+</html>

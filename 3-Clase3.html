@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3 - DOM</title>
+    <style>
+        .resaltado {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="tituloPrincipal">Clase 3: DOM y querySelector</h1>
+
+    <p class="parrafo">Primer parrafo con clase.</p>
+    <p class="parrafo">Segundo parrafo con clase.</p>
+    <p class="parrafo">Tercer parrafo con clase.</p>
+
+    <button id="botonSaludar">Saludar</button>
+    <button id="botonCambiarTitulo">Cambiar titulo</button>
+
+    <hr>
+
+    <h2>Lista de temas</h2>
+    <ul id="listaTemas">
+        <li>getElementById</li>
+        <li>querySelector</li>
+        <li>querySelectorAll</li>
+    </ul>
+
+    <hr>
+
+    <h2>Tarjetas</h2>
+
+    <div class="tarjeta">
+        <h3>Tarjeta 1</h3>
+        <p>Esta tarjeta tiene la clase tarjeta.</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>Tarjeta 2</h3>
+        <p>Esta tarjeta tambien tiene la clase tarjeta.</p>
+    </div>
+
+    <hr>
+
+    <h2>Input</h2>
+
+    <!-- placeholder muestra un texto de ayuda dentro del input. -->
+    <input id="nombreUsuario" type="text" placeholder="Escribe tu nombre">
+    <button id="botonMostrarNombre">Mostrar nombre</button>
+
+    <hr>
+
+    <!--  ACTIVIDAD  -->
+    <h2>Actividad: DOM</h2>
+
+    <div id="miId">Este div tiene un id.</div>
+    <p class="miClase">Este parrafo tiene una clase.</p>
+
+    <ul id="listaActividad">
+        <li>getElementById</li>
+        <li>querySelector</li>
+        <li>querySelectorAll</li>
+    </ul>
+
+    <a id="enlace" href="https://www.youtube.com/">Ir a YouTube</a>
+
+    <br><br>
+
+    <button id="botonTexto">Cambiar texto</button>
+    <button id="botonHtml">Cambiar HTML</button>
+    <button id="botonAtributo">Cambiar enlace</button>
+    <button id="botonClase">Resaltar enlace</button>
+    <button id="botonNodos">Ver nodos</button>
+
+    <script src="3-Clase3.js"></script>
+</body>
+</html>

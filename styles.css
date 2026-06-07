@@ -1,0 +1,8 @@
+:root{
+    --textos: red;
+}
+
+
+#miBoton{
+    background-color: var(--textos);
+}
